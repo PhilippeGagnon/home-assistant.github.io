@@ -119,7 +119,7 @@ Here's a handy configuration for the Aeon Labs Minimote that defines all possibl
 
 ##### {% linkable_title HomeSeer Switches %}
 
-For the HomeSeer devices specifically, you may need to update the `COMMAND_CLASS_CENTRAL_SCENE` for each node in your `zwcfg` file with the following:
+For the HomeSeer devices specifically, you may need to update the `COMMAND_CLASS_CENTRAL_SCENE` for each node in your `zwcfg` file (while HA is stopped, otherwise your changes will be overwritten when it’s stopped) with the following:
 
 ```xml
 			<CommandClass id="91" name="COMMAND_CLASS_CENTRAL_SCENE" version="1" request_flags="4" innif="true" scenecount="0">
